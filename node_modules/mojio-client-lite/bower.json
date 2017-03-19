@@ -1,0 +1,23 @@
+{
+  "name": "mojio-client-lite",
+  "version": "0.0.1",
+  "authors": [
+    "Pooya Paridel"
+  ],
+  "description": "Mojio Client SDK (Lite version)",
+  "main": "src/MojioClientLite.js",
+  "keywords": [
+    "Mojio",
+    "SDK",
+    "javascript",
+    "coffeescript"
+  ],
+  "license": "",
+  "homepage": "http://moj.io",
+  "private": true,
+  "ignore": [
+    "**/.*"
+  ],
+  "dependencies": {
+  }
+}
