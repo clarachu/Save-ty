@@ -81,11 +81,16 @@ mojio_client.authorize('clarachu','save-ty').then(function(res,err){
   var x = http.request(options,function(res){
     console.log("Connected");
     res.setEncoding('utf8');
+    var result='';
     res.on('data',function(data){
-      var result = JSON.parse(data);
+      result +=data;
+      //var result = JSON.parse(data);
     });
     res.on('error', function(e) {
       console.log('problem with request: ' + e.message);
+    });
+    res.on('end', function () {
+      console.log(JSON.parse(result));
     });
   });
 
