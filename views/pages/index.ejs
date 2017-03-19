@@ -14,7 +14,19 @@
             <h1>This is great</h1>
             <p>Welcome to templating using EJS</p>
         </div>
+
+        <script src="MojioClientLite.js"></script>
+        <script>
+            var config = {
+                application: '0244d7df-ff21-414f-b225-cbc980379a10' // your application ID
+            };
+            mojio_client = new MojioClientLite(config);
+        </script>
+        <h2>mojio_client.get().me()</h2>
+
+
     </main>
+
 
     <footer>
         <% include ../partials/footer %>
